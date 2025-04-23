@@ -1,0 +1,23 @@
+.container {
+  padding: 20px;
+}
+
+form label {
+  font-weight: 600;
+  padding: 5px 0 5px 0;
+}
+form input {
+  width: 100%;
+}
+form textarea {
+  width: 100%;
+}
+
+img {
+  padding-left: 35%;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+}

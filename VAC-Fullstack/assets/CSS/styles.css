@@ -1,0 +1,16 @@
+* {
+  margin: 0px;
+  padding: 0;
+  font-family: "Lexend Peta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ------------------------------------------ */
+
+.coloring {
+  color: blue;
+}
+
+/* footer */

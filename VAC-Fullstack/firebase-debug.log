@@ -1,0 +1,39 @@
+[debug] [2025-04-23T10:45:32.542Z] ----------------------------------------------------------------------
+[debug] [2025-04-23T10:45:32.546Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\GOKULRAJ M\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-04-23T10:45:32.547Z] CLI Version:   13.30.0
+[debug] [2025-04-23T10:45:32.548Z] Platform:      win32
+[debug] [2025-04-23T10:45:32.548Z] Node Version:  v22.14.0
+[debug] [2025-04-23T10:45:32.549Z] Time:          Wed Apr 23 2025 16:15:32 GMT+0530 (India Standard Time)
+[debug] [2025-04-23T10:45:32.549Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-23T10:45:32.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-23T10:45:32.924Z] > authorizing via signed-in user (g8417874@gmail.com)
+[debug] [2025-04-23T10:45:32.924Z] [iam] checking project gokulraj-rock-paper-scis-9dd2d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-23T10:45:32.926Z] Checked if tokens are valid: false, expires at: 1739112674763
+[debug] [2025-04-23T10:45:32.927Z] Checked if tokens are valid: false, expires at: 1739112674763
+[debug] [2025-04-23T10:45:32.927Z] > refreshing access token with scopes: []
+[debug] [2025-04-23T10:45:32.930Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-23T10:45:32.930Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-23T10:45:33.806Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-23T10:45:33.806Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-23T10:45:33.818Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gokulraj-rock-paper-scis-9dd2d:testIamPermissions [none]
+[debug] [2025-04-23T10:45:33.818Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gokulraj-rock-paper-scis-9dd2d:testIamPermissions x-goog-quota-user=projects/gokulraj-rock-paper-scis-9dd2d
+[debug] [2025-04-23T10:45:33.818Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gokulraj-rock-paper-scis-9dd2d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-23T10:45:35.796Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gokulraj-rock-paper-scis-9dd2d:testIamPermissions 200
+[debug] [2025-04-23T10:45:35.796Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gokulraj-rock-paper-scis-9dd2d:testIamPermissions {}
+[debug] [2025-04-23T10:45:35.797Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project gokulraj-rock-paper-scis-9dd2d:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-04-23T10:45:35.798Z] Checked if tokens are valid: true, expires at: 1745408732806
+[debug] [2025-04-23T10:45:35.799Z] Checked if tokens are valid: true, expires at: 1745408732806
+[debug] [2025-04-23T10:45:35.799Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gokulraj-rock-paper-scis-9dd2d [none]
+[debug] [2025-04-23T10:45:36.859Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gokulraj-rock-paper-scis-9dd2d 403
+[debug] [2025-04-23T10:45:36.859Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gokulraj-rock-paper-scis-9dd2d {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-04-23T10:45:36.860Z] Request to https://firebase.googleapis.com/v1beta1/projects/gokulraj-rock-paper-scis-9dd2d had HTTP Error: 403, The caller does not have permission
+[debug] [2025-04-23T10:45:37.566Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/gokulraj-rock-paper-scis-9dd2d had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\GOKULRAJ M\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\GOKULRAJ M\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project gokulraj-rock-paper-scis-9dd2d. Please make sure the project exists and your account has permission to access it.
